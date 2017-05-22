@@ -80,7 +80,7 @@ function movie_this(name) {
 
 	console.log("name: " + name);
 
-    request.get("http://www.omdbapi.com/?apikey=95c2d4d4&t=" + name + "&plot=full", function(error, status, body) {
+    request.get("http://www.omdbapi.com/?i=tt3896198&apikey=95c2d4d4&t=" + name + "&plot=full", function(error, status, body) {
         if (error) {
         	console.log(error);
         }else {
