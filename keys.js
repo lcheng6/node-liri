@@ -1,5 +1,3 @@
-console.log('this is loaded');
-
 exports.twitterKeys = {
   consumer_key: 'MgjyFXbfjdLQqEpZVFRP2am31',
   consumer_secret: 'rdlAcITe0QxcxeQDBzwQRF8gHuurMXAt1eVY7PpYVgmN9rSCEJ',
@@ -7,6 +5,3 @@ exports.twitterKeys = {
   access_token_secret: 'uQAovncetJYd2XvJnbT83jcU9XbRa4BkEdFTc8aHQwjXJ',
 }
 
-exports.spotifyKeys= {
-
-}
