@@ -31,8 +31,8 @@ function getTweets() {
     twitterClient.get('statuses/user_timeline', { count: 20 }, function(error, tweets, response) {
         if (!error) {
             tweets.forEach(function(tweet) {
-                console.log('*********************************************************** \n Created: ' + tweet.created_at + "\n" + "Tweet: " + tweet.text);
-                console.log('Created: ' + tweet.created_at + "\n Tweet: " + tweet.text + "\n\n");
+                console.log('---------------------------------------------- \n Created: '
+                	+ tweet.created_at + "\n" + "Tweet: " + tweet.text);
             });
         } else {
             console.log(error);
@@ -40,3 +40,9 @@ function getTweets() {
     })
 };
 
+if (commands[command] != undefined) {
+	var func = commands[command];
+	if (func != null) {
+		func();
+	}
+}
