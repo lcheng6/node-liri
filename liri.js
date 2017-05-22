@@ -80,7 +80,7 @@ function movie_this(name) {
 
 	console.log("name: " + name);
 
-    request.get("http://www.omdbapi.com/?apikey=<>t=" + name + "&plot=full", function(error, status, body) {
+    request.get("http://www.omdbapi.com/?apikey=95c2d4d4&t=" + name + "&plot=full", function(error, status, body) {
         if (error) {
         	console.log(error);
         }else {
@@ -90,7 +90,8 @@ function movie_this(name) {
 	        //     ratings += rating.Source + ", ";
 	        // });
 	        // console.log("Ratings: " + ratings);
-	        console.log(body)
+	        console.log("body:" + body)
+	        console.log("-------------------------------------------------------------");
 	        console.log("Title: " + bodyObj.Title);
 	        console.log("Year: " + bodyObj.Year);
 	        console.log("Rating: " + bodyObj.imdbRating);
